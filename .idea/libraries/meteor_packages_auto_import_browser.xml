@@ -44,7 +44,9 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/geojson-utils.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/pre.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/post.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_bootstrap-3/3.3.1_1/web.browser/packages/mizzao_bootstrap-3/bootstrap-3/css/bootstrap.css" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/scanner.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_bootstrap-3/3.3.1_1/web.browser/packages/mizzao_bootstrap-3.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/templatetag.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/tokenize.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/utils.js" />
@@ -149,7 +151,9 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/geojson-utils.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/pre.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/1.0.4/web.browser/post.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_bootstrap-3/3.3.1_1/web.browser/packages/mizzao_bootstrap-3/bootstrap-3/css/bootstrap.css" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/scanner.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_bootstrap-3/3.3.1_1/web.browser/packages/mizzao_bootstrap-3.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/templatetag.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/tokenize.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/1.0.5/web.browser/utils.js" />
