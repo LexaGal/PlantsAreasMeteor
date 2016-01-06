@@ -1,7 +1,7 @@
 Accounts.ui.config({
     requestPermissions: {},
     extraSignupFields: [{
-        fieldName: 'first-name',
+        fieldName: 'first_name',
         fieldLabel: 'First name',
         inputType: 'text',
         visible: true,
@@ -14,10 +14,10 @@ Accounts.ui.config({
             }
         }
     }, {
-        fieldName: 'last-name',
+        fieldName: 'last_name',
         fieldLabel: 'Last name',
         inputType: 'text',
-        visible: true,
+        visible: true
     }, {
         fieldName: 'gender',
         showFieldLabel: false,      // If true, fieldLabel will be shown before radio group
@@ -48,7 +48,7 @@ Accounts.ui.config({
         }, {
             id: 2,
             label: 'Russia',
-            value: 'ru',
+            value: 'ru'
         }],
         visible: true
     }, {
