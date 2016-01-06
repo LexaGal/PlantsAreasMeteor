@@ -7,18 +7,16 @@ Template.postSubmit.events({
             title: $(e.target).find('[name=title]').val()
         };
 
-        Meteor.call('postInsert', post, function(error, result) {
+        Meteor.call('postInsert', post, function (error, result) {
+
             // отобразить ошибку пользователю и прерваться
-            if (error)
-                return alert(error.reason);
-
-            // show this result but route anyway
-            if (result.postExists)
-                alert('This link has already been posted');
-
+            if (result.postExists) {
+                throwError('This link has already been posted');
+            }
             Router.go('postPage', {_id: result._id});
-        });
+        })
     }
+});
 
     //for Simulation on '(client)' && '(server)'
     //'submit form': function(event) {
@@ -36,4 +34,4 @@ Template.postSubmit.events({
     //    });
     //    Router.go('postsList');
     //}
-});
+//});
