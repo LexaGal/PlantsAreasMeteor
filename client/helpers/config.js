@@ -47,8 +47,8 @@ Accounts.ui.config({
             value: 'us'
         }, {
             id: 2,
-            label: 'Spain',
-            value: 'es',
+            label: 'Russia',
+            value: 'ru',
         }],
         visible: true
     }, {
