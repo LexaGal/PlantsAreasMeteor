@@ -23,4 +23,7 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 twbs:bootstrap
 check
-tmeasday:errors
+tinytest
+mongo-livedata
+errors
+blaze
