@@ -117,6 +117,7 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/pt-PT.i18n.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.4/web.browser/reload.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/pl.i18n.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/tmeasday_errors/2.0.0/web.browser/packages/tmeasday_errors.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/vi.i18n.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/ru.i18n.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/ko.i18n.js" />
@@ -302,6 +303,7 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/pt-PT.i18n.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/1.1.4/web.browser/reload.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/pl.i18n.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/tmeasday_errors/2.0.0/web.browser/packages/tmeasday_errors.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/vi.i18n.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/ru.i18n.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ian_accounts-ui-bootstrap-3/1.2.84/web.browser/i18n/ko.i18n.js" />

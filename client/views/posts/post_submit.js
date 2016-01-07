@@ -11,7 +11,7 @@ Template.postSubmit.events({
 
             // отобразить ошибку пользователю и прерваться
             if (result.postExists) {
-                throwError('This link has already been posted');
+                Errors.throw('This link has already been posted');
             }
             Router.go('postPage', {_id: result._id});
         })
