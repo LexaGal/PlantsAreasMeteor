@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bc9c2cd-132b-4ea1-885c-42791ab5eb0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/notifications.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/notifications/notification.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/notifications/notifications.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/comments.js" afterPath="$PROJECT_DIR$/lib/collections/comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/includes/header.html" afterPath="$PROJECT_DIR$/client/views/includes/header.html" />
     </list>
     <ignored path="PlantsAreas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,21 +56,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.036480688">
+            <state vertical-scroll-proportion="-0.68">
               <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.346154">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/notifications/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.346153">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/notifications/notification.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/posts/post_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -87,45 +116,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".finished-upgraders" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.meteor/.finished-upgraders">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="posts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/collections/posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.06924643">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="e#480#514#0" expanded="false" />
                 <element signature="e#1962#1989#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_edit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/posts/post_edit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packages" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.meteor/packages">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.88">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,7 +160,6 @@
         <option value="$PROJECT_DIR$/client/views/posts/posts_list.js" />
         <option value="$PROJECT_DIR$/client/views/posts/a.html" />
         <option value="$PROJECT_DIR$/lib/permissions.js" />
-        <option value="$PROJECT_DIR$/client/views/includes/header.html" />
         <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/helpers/config.js" />
         <option value="$PROJECT_DIR$/client/views/includes/a.js" />
@@ -194,6 +192,9 @@
         <option value="$PROJECT_DIR$/lib/collections/comments.js" />
         <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/lib/router.js" />
+        <option value="$PROJECT_DIR$/client/views/includes/header.html" />
+        <option value="$PROJECT_DIR$/client/views/notifications/notifications.html" />
+        <option value="$PROJECT_DIR$/client/views/notifications/e.js" />
       </list>
     </option>
   </component>
@@ -331,6 +332,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlantsAreas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlantsAreas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notifications" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,7 +649,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452276250050</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added basic notifications collection.">
+      <created>1452277719612</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1452277719612</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -640,9 +669,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15660685" sideWeight="0.5026022" order="0" side_tool="true" content_ui="tabs" />
@@ -705,7 +734,8 @@
     <MESSAGE value="Форма для отправки комментариев готова." />
     <MESSAGE value="Создан простой механизм публикации и подписки для коммен." />
     <MESSAGE value="Денормализуем количество комментариев в объект поста." />
-    <option name="LAST_COMMIT_MESSAGE" value="Денормализуем количество комментариев в объект поста." />
+    <MESSAGE value="Added basic notifications collection." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic notifications collection." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.076923">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/versions">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.04">
@@ -913,14 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/posts/post_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1031,25 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#480#514#0" expanded="false" />
-            <element signature="e#1962#1989#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/notifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/comments.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1068,9 +1063,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036480688">
+        <state vertical-scroll-proportion="-0.68">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.346154">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/posts/post_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/notifications/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/notifications/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06924643">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#480#514#0" expanded="false" />
+            <element signature="e#1962#1989#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
