@@ -4,11 +4,11 @@ if (Posts.find().count() === 0) {
 
     // create two users
     var tomId = Meteor.users.insert({
-        profile: { first_name: 'Tom',  last_name: 'Coleman' }
+        profile: {first_name: 'Tom', last_name: 'Coleman'}
     });
     var tom = Meteor.users.findOne(tomId);
     var sachaId = Meteor.users.insert({
-        profile: { first_name: 'Sacha', last_name: 'Greif' }
+        profile: {first_name: 'Sacha', last_name: 'Greif'}
     });
     var sacha = Meteor.users.findOne(sachaId);
 
@@ -17,7 +17,8 @@ if (Posts.find().count() === 0) {
         userId: sacha._id,
         author: sacha.profile.first_name.concat(" ").concat(sacha.profile.last_name),
         url: 'http://sachagreif.com/introducing-telescope/',
-        submitted: now - 7 * 3600 * 1000
+        submitted: now - 7 * 3600 * 1000,
+        commentsCount: 2
     });
 
     Comments.insert({
@@ -41,7 +42,8 @@ if (Posts.find().count() === 0) {
         userId: tom._id,
         author: tom.profile.first_name.concat(" ").concat(tom.profile.last_name),
         url: 'http://meteor.com',
-        submitted: now - 10 * 3600 * 1000
+        submitted: now - 10 * 3600 * 1000,
+        commentsCount: 2
     });
 
     Posts.insert({
@@ -49,6 +51,7 @@ if (Posts.find().count() === 0) {
         userId: tom._id,
         author: tom.profile.first_name.concat(" ").concat(tom.profile.last_name),
         url: 'http://themeteorbook.com',
-        submitted: now - 12 * 3600 * 1000
+        submitted: now - 12 * 3600 * 1000,
+        commentsCount: 2
     });
 }
