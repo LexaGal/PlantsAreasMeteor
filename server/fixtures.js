@@ -58,7 +58,7 @@ if (Posts.find().count() === 0) {
     for (var i = 0; i < 10; i++) {
         Posts.insert({
             title: 'Test post #' + i,
-            author: sacha.profile.name,
+            author: sacha.profile.first_name.concat(" ").concat(tom.profile.last_name),
             userId: sacha._id,
             url: 'http://google.com/?q=test-' + i,
             submitted: now - i * 3600 * 1000,

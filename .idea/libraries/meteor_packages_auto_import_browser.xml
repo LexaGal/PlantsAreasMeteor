@@ -43,9 +43,12 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/diff-sequence/1.0.1/web.browser/diff.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/multiply_iron-router-progress/1.0.2/web.browser/progress.coffee" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/1.0.4/web.browser/srp.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/1.0.4/web.browser/biginteger.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.2.6/web.browser/.npm/package/node_modules/meteor-ecmascript-runtime/client.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/galushkinaleksey_errors/1.0.0/web.browser/errors_list.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/galushkinaleksey_errors/1.0.0/web.browser/errors.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/1.0.7/web.browser/stringify.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/1.0.7/web.browser/ejson.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.1.14/web.browser/export_globals.js" />
@@ -231,9 +234,12 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/diff-sequence/1.0.1/web.browser/diff.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/multiply_iron-router-progress/1.0.2/web.browser/progress.coffee" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/1.0.4/web.browser/srp.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/1.0.4/web.browser/biginteger.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.2.6/web.browser/.npm/package/node_modules/meteor-ecmascript-runtime/client.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/galushkinaleksey_errors/1.0.0/web.browser/errors_list.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/galushkinaleksey_errors/1.0.0/web.browser/errors.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/1.0.7/web.browser/stringify.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/1.0.7/web.browser/ejson.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/es5-shim/4.1.14/web.browser/export_globals.js" />
