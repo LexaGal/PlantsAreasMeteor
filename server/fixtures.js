@@ -18,7 +18,8 @@ if (Posts.find().count() === 0) {
         author: sacha.profile.first_name.concat(" ").concat(sacha.profile.last_name),
         url: 'http://sachagreif.com/introducing-telescope/',
         submitted: now - 7 * 3600 * 1000,
-        commentsCount: 2
+        commentsCount: 2,
+        upvoters: [], votes: 0
     });
 
     Comments.insert({
@@ -43,7 +44,8 @@ if (Posts.find().count() === 0) {
         author: tom.profile.first_name.concat(" ").concat(tom.profile.last_name),
         url: 'http://meteor.com',
         submitted: now - 10 * 3600 * 1000,
-        commentsCount: 2
+        commentsCount: 2,
+        upvoters: [], votes: 0
     });
 
     Posts.insert({
@@ -52,17 +54,19 @@ if (Posts.find().count() === 0) {
         author: tom.profile.first_name.concat(" ").concat(tom.profile.last_name),
         url: 'http://themeteorbook.com',
         submitted: now - 12 * 3600 * 1000,
-        commentsCount: 2
+        commentsCount: 2,
+        upvoters: [], votes: 0
     });
 
     for (var i = 0; i < 10; i++) {
         Posts.insert({
             title: 'Test post #' + i,
-            author: sacha.profile.first_name.concat(" ").concat(tom.profile.last_name),
+            author: sacha.profile.first_name.concat(" ").concat(sacha.profile.last_name),
             userId: sacha._id,
             url: 'http://google.com/?q=test-' + i,
             submitted: now - i * 3600 * 1000,
-            commentsCount: 0
+            commentsCount: 0,
+            upvoters: [], votes: 0
         });
     }
 }
