@@ -1,3 +1,3 @@
-Deps.autorun(function () {
-    Meteor.subscribe('currUser');
-});
+//Deps.autorun(function () {
+//    Meteor.subscribe('currUser');
+//});
