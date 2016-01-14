@@ -1,3 +1,5 @@
+//name = "";
+
 Accounts.ui.config({
     requestPermissions: {},
     extraSignupFields: [{
@@ -10,6 +12,7 @@ Accounts.ui.config({
                 errorFunction("Please write your first name");
                 return false;
             } else {
+                //name.concat(value);
                 return true;
             }
         }
@@ -17,8 +20,25 @@ Accounts.ui.config({
         fieldName: 'last_name',
         fieldLabel: 'Last name',
         inputType: 'text',
-        visible: true
-    }, {
+        visible: true,
+        validate: function(value, errorFunction) {
+            if (!value) {
+                errorFunction("Please write your last name");
+                return false;
+            } else {
+                //name.concat(" ").concat(value);
+                return true;
+            }
+        }
+    },
+        //{
+        //fieldName: 'name',
+        //fieldLabel: 'name',
+        //visible: false,
+        //value: name,
+        //saveToProfile: true
+    //},
+        {
         fieldName: 'gender',
         showFieldLabel: false,      // If true, fieldLabel will be shown before radio group
         fieldLabel: 'Gender',

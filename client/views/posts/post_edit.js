@@ -7,7 +7,7 @@ Template.postEdit.events({
         var postAttributes = {
             url: $(e.target).find('[name=url]').val(),
             title: $(e.target).find('[name=title]').val()
-        }
+        };
 
         var postWithSameLink = Posts.findOne({url: postAttributes.url});
 

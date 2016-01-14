@@ -1,3 +1,3 @@
-//Deps.autorun(function() {
-//    alert(Session.get('message'));
-//});
+Deps.autorun(function () {
+    Meteor.subscribe('currUser');
+});
