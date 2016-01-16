@@ -1,17 +1,25 @@
-Meteor.publish('posts', function (options) {
-    return Posts.find({}, options);
+Meteor.publish('sensors', function (plantsareaId) {
+    return Sensors.find({plantsareaId: plantsareaId});
 });
 
-Meteor.publish('comments', function (postId) {
-    return Comments.find({postId: postId});
+Meteor.publish('plantsareas', function (options) {
+    return PlantsAreas.find({}, options);
 });
 
-Meteor.publish('notifications', function () {
-    return Notifications.find({userId: this.userId, read: false});
-});
+//Meteor.publish('posts', function (options) {
+//    return Posts.find({}, options);
+//});
 
-Meteor.publish('singlePost', function (id) {
-    return id && Posts.find(id);
+//Meteor.publish('comments', function (postId) {
+//    return Comments.find({postId: postId});
+//});
+
+//Meteor.publish('notifications', function () {
+//    return Notifications.find({userId: this.userId, read: false});
+//});
+
+Meteor.publish('singlePlantsarea', function (id) {
+    return id && PlantsAreas.find(id);
 });
 
 Meteor.publish('currUser', function () {

@@ -1,0 +1,15 @@
+<template name="plantsareaPage">
+    {{> plantsareaItem}}
+    <ul class="comments">
+        <h3>Sensors</h3>
+        {{#each sensors}}
+            {{> sensor}}
+        {{/each}}
+    </ul>
+
+    <!--{{#if currentUser}}-->
+        <!--{{> commentSubmit}}-->
+    <!--{{else}}-->
+        <!--<p>Please log in to leave a comment.</p>-->
+    <!--{{/if}}-->
+</template>

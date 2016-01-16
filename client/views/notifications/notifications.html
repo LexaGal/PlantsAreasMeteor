@@ -1,28 +1,28 @@
-<template name="notifications">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        Notifications
-        {{#if notificationCount}}
-            <span class="badge badge-inverse">{{notificationCount}}</span>
-        {{/if}}
-        <b class="caret"></b>
-    </a>
-    <ul class="notification dropdown-menu">
-        {{#if notificationCount}}
-            {{#each notifications}}
-                {{> notificationItem}}
-            {{/each}}
-        {{else}}
-            <li><span>No Notifications</span></li>
-        {{/if}}
-    </ul>
-</template>
+<!--<template name="notifications">-->
+    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+        <!--Notifications-->
+        <!--{{#if notificationCount}}-->
+            <!--<span class="badge badge-inverse">{{notificationCount}}</span>-->
+        <!--{{/if}}-->
+        <!--<b class="caret"></b>-->
+    <!--</a>-->
+    <!--<ul class="notification dropdown-menu">-->
+        <!--{{#if notificationCount}}-->
+            <!--{{#each notifications}}-->
+                <!--{{> notificationItem}}-->
+            <!--{{/each}}-->
+        <!--{{else}}-->
+            <!--<li><span>No Notifications</span></li>-->
+        <!--{{/if}}-->
+    <!--</ul>-->
+<!--</template>-->
 
-<template name="notificationItem">
-    <li>
-        {{#with this}}
-        <a href="{{pathFor route='postPage' _id=this.postId}}">
-            <strong>{{commenterName}}</strong> commented on your post
-        </a>
-        {{/with}}
-    </li>
-</template>
+<!--<template name="notificationItem">-->
+    <!--<li>-->
+        <!--{{#with this}}-->
+        <!--<a href="{{pathFor route='postPage' _id=this.postId}}">-->
+            <!--<strong>{{commenterName}}</strong> commented on your post-->
+        <!--</a>-->
+        <!--{{/with}}-->
+    <!--</li>-->
+<!--</template>-->

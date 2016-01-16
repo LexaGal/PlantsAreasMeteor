@@ -1,7 +1,7 @@
-<template name="postsList">
+<template name="plantsareasList">
     <div class="posts">
-        {{#each postsWithRank}}
-            {{> postItem}}
+        {{#each plantsareasWithRank}}
+            {{> plantsareaItem}}
         {{/each}}
         {{#if nextPath}}
             <a class="load-more" href="{{nextPath}}">Load more</a>
