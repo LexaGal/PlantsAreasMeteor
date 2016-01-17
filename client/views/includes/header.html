@@ -28,10 +28,13 @@
                         </li>
                     {{/if}}
                 </ul>
-                <ul class="nav navbar-nav"></ul>
+                <!--<ul class="nav navbar-nav"></ul>-->
                 <ul class="nav navbar-nav navbar-right">
-                    <img src="{{photoURL}}" class="icon">
-                    {{> loginButtons}}
+                    <!--<img src="{{photoURL}}" class="icon">-->
+                    <!--{{> loginButtons}}-->
+                    <li class="dropdown">
+                        {{> userAccount}}
+                    </li>
                 </ul>
             </div>
         </div>

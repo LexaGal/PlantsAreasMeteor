@@ -3,7 +3,7 @@ var Positions = new Meteor.Collection(null);
 Template.plantsareaItem.helpers({
 
     ownPost: function () {
-        return Meteor.user() && this.userId == Meteor.userId();
+        return UserNET && this.userId == UserNET._id;
     },
 
     //upvotedClass: function() {
