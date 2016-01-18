@@ -1,6 +1,6 @@
 Template.userAccount.events({
 
-    'submit form': function(event) {
+    'submit form': function (event) {
         event.preventDefault();
 
         var userData = {
@@ -9,13 +9,31 @@ Template.userAccount.events({
             passwordHash: Package.sha.SHA256($(event.target).find('[name=password]').val())
         };
 
-        Meteor.call('validateUser', userData, function(error, user) {
+        Meteor.call('validateUser', userData, function (error, user) {
             if (user == null) {
                 Errors.throw("User with such credentials do not exist");
             } else {
                 UserNET = user;
                 $('#loginLabel').text("You are logged in as ".concat(UserNET.name));
+                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
+                Router.go('newPlantsareas');
             }
         });
+    },
+
+    'click #submitLogout': function(event){
+        event.preventDefault();
+
+        UserNET = null;
+        $('#loginLabel').text("Log in");
+        $('.dropdown.open .dropdown-toggle').dropdown('toggle');
+        Router.go('newPlantsareas');
+    }
+});
+
+Template.userAccount.helpers({
+
+    loggedInUser: function () {
+        return UserNET != null;
     }
 });

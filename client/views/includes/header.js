@@ -8,7 +8,7 @@ Template.header.helpers({
         });
 
         return active && 'active';
-    },
+    }
 
     //photoURL: function () {
     //    if (Meteor.user()) {
