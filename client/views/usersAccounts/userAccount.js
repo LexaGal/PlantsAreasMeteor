@@ -1,3 +1,5 @@
+var html = $.parseHTML("<b class=\"caret\"></b>");
+
 Template.userAccount.events({
 
     'submit form': function (event) {
@@ -14,7 +16,7 @@ Template.userAccount.events({
                 Errors.throw("User with such credentials do not exist");
             } else {
                 UserNET = user;
-                $('#loginLabel').text("You are logged in as ".concat(UserNET.name));
+                $('#loginLabel').text("You are logged in as ".concat(UserNET.name)).append(html);
                 $('.dropdown.open .dropdown-toggle').dropdown('toggle');
                 Router.go('newPlantsareas');
             }
@@ -25,7 +27,7 @@ Template.userAccount.events({
         event.preventDefault();
 
         UserNET = null;
-        $('#loginLabel').text("Log in");
+        $('#loginLabel').text("Log in").append(html);
         $('.dropdown.open .dropdown-toggle').dropdown('toggle');
         Router.go('newPlantsareas');
     }

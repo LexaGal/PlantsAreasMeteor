@@ -1,0 +1,12 @@
+<template name="messageItem">
+    <li>
+        {{#with this}}
+            <!--<a href="{{pathFor route='messagesPage' _id = this._id}}">-->
+            <a>
+                <strong>Send: {{dateTime}}, Value: {{parameterValue}}</strong>
+            <!--</a>-->
+            <button id="closeMessage" class="btn btn-primary">Close</button>
+            </a>
+        {{/with}}
+    </li>
+</template>

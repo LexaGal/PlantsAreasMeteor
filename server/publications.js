@@ -14,9 +14,13 @@ Meteor.publish('plantsareas', function (userId ,options) {
 //    return Comments.find({postId: postId});
 //});
 
-//Meteor.publish('notifications', function () {
-//    return Notifications.find({userId: this.userId, read: false});
-//});
+Meteor.publish('messages', function (plantsareaId) {
+    return Messages.find({plantsareaId: plantsareaId, read: "False"});
+});
+
+Meteor.publish('singleMessage', function (id) {
+    return id && Messages.find(id);
+});
 
 Meteor.publish('singlePlantsarea', function (id) {
     return id && PlantsAreas.find(id);

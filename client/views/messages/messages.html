@@ -1,0 +1,20 @@
+<template name="messages">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Messages
+        {{#if messagesCount}}
+            <span class="badge badge-inverse">{{messagesCount}}</span>
+        {{/if}}
+        <b class="caret"></b>
+        <button id="closeMessages" class="btn btn-primary">Close all</button>
+    </a>
+    <ul class="dropdown-menu">
+        {{#if messagesCount}}
+            {{#each messages}}
+                {{> messageItem}}
+            {{/each}}
+        {{else}}
+            <li><span>No messages</span></li>
+        {{/if}}
+    </ul>
+</template>
+
