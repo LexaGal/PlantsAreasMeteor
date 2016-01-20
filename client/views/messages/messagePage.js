@@ -78,8 +78,10 @@ Template.messagePage.events({
             Meteor.call('sendEmail', emailAddress, emailSubject, emailText(this, emailTo), function (error) {
                 if (error) {
                     Errors.throw(error.reason);
+                    $('#sendResult').text('Emails are not sent');
+                } else {
+                    $('#sendResult').text('All emails are sent');
                 }
-                $('#sendResult').text('All emails are sent');
             });
         }
     }
