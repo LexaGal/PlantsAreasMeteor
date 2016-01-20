@@ -35,30 +35,26 @@ Meteor.startup(function () {
 });
 
 Meteor.methods({
-    sendEmail: function (to, subject, text) {
+    sendEmails: function (to, subject, text) {
         check([to, subject, text], [String]);
 
         // Let other method calls from the same client start running,
         // without waiting for the email sending to complete.
         this.unblock();
 
-        var exists = emailExistence.check(to, function (error, res) {
-            if (error) {
-                return error;
-            }
-            return res;
-        });
+        //emailExistence.check(to, function(err, res) {
+        //
+        //});
 
-        if (exists == 250) {
-            Email.send({
-                to: to,
-                from: "galushkin.aleksey@gmail.com",
-                subject: subject,
-                text: text
-            });
-            return "Sent";
-        }
-        var error = "Not sent";
-        return error;
+        Email.send({
+            to: to,
+            from: "galushkin.aleksey@gmail.com",
+            subject: subject,
+            text: text
+        });
+        //, function () {
+        //    var error = "Not sent";
+        //    return error;
+        //});
     }
 });

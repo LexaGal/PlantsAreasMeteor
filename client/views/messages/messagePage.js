@@ -38,7 +38,6 @@ var i = 0;
 Template.messagePage.events({
 
     'change #emailsSelect': function () {
-
         var email = $('#emailsSelect').find(":selected").text();
         for (var j = 0; j < i; j++) {
             if (emails[j] == email) {
@@ -54,10 +53,14 @@ Template.messagePage.events({
         });
     },
 
-    'click #sendEmail': function () {
+    'click #clearEmails': function () {
+        $('#chosenEmails').val("");
+        emails = [];
+        i = 0;
+    },
 
+    'click #sendEmails': function () {
         var emailSubject = "New message from plants area " + this.plantsareaId;
-
         var emailText = function (object, to) {
             return "Hi, " + to + "!\n" +
                 "Send on: " + object.dateTime +
@@ -70,16 +73,25 @@ Template.messagePage.events({
             Errors.throw("Choose addresses for emailing");
         }
 
+        function clear(res) {
+            $('#' + res).text("");
+            $('#' + res).text("");
+        }
+
         for (var j = 0; j < i; j++) {
             var email = emails[j].split(/[()]+/);
             var emailTo = email[0];
             var emailAddress = email[1];
 
-            Meteor.call('sendEmail', emailAddress, emailSubject, emailText(this, emailTo), function (error) {
+            Meteor.call('sendEmails', emailAddress, emailSubject, emailText(this, emailTo), function (error) {
                 if (error) {
                     Errors.throw(error.reason);
+                    $('#errorResult').text('Emails are not sent');
+                    setTimeout(clear, 6000, 'errorResult');
+                } else {
+                    $('#successResult').text('All emails are sent');
+                    setTimeout(clear, 6000, 'successResult');
                 }
-                $('#sendResult').text('All emails are sent');
             });
         }
     }

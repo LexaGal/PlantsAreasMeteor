@@ -17,8 +17,10 @@
     </div>
     <br/>
     <div class="container">
-        <button id="sendEmail" class="navbar-nav btn btn-primary" style="float: right">Send</button>
-        <input id="chosenEmails" type="text" style="margin-left: -10px; width: 80%"/>
-        <label id="sendResult" class="label-success"></label>
+        <input id="chosenEmails" disabled="disabled" type="text" style="margin-left: -20px; width: 80%"/>
+        <button id="sendEmails" class="navbar-nav btn btn-primary" style="float: right">Send</button>
+        <button id="clearEmails" class="navbar-nav btn btn-primary" style="margin-right: 10px; float: right">Clear</button>
     </div>
+    <label id="successResult" class="text-success"></label>
+    <label id="errorResult" class="text-danger"></label>
 </template>
