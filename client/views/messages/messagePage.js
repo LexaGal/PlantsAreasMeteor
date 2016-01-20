@@ -74,9 +74,7 @@ Template.messagePage.events({
             var email = emails[j].split(/[()]+/);
             var emailTo = email[0];
             var emailAddress = email[1];
-            emailExistence.check('email@domain.com', function(err,res){
-                console.log('res: '+res);
-            });
+
             Meteor.call('sendEmail', emailAddress, emailSubject, emailText(this, emailTo), function (error) {
                 if (error) {
                     Errors.throw(error.reason);

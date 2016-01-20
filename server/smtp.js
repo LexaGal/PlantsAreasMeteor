@@ -30,7 +30,7 @@
 //        sendVerificationEmail: true
 //    });
 //});
-Meteor.startup(function(){
+Meteor.startup(function () {
     process.env.MAIL_URL = 'smtp://galushkin.aleksey:galushkin.aleksey1@smtp.gmail.com:587/'
 });
 
@@ -42,11 +42,23 @@ Meteor.methods({
         // without waiting for the email sending to complete.
         this.unblock();
 
-        Email.send({
-            to: to,
-            from: "galushkin.aleksey@gmail.com",
-            subject: subject,
-            text: text
+        var exists = emailExistence.check(to, function (error, res) {
+            if (error) {
+                return error;
+            }
+            return res;
         });
+
+        if (exists == 250) {
+            Email.send({
+                to: to,
+                from: "galushkin.aleksey@gmail.com",
+                subject: subject,
+                text: text
+            });
+            return "Sent";
+        }
+        var error = "Not sent";
+        return error;
     }
 });
