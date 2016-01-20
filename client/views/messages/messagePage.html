@@ -1,0 +1,24 @@
+<template name="messagePage" xmlns="http://www.w3.org/1999/html">
+    {{> messageItem}}
+    <div>
+        Email addresses:
+        {{#if emailsCount}}
+            <span class="badge badge-inverse">{{emailsCount}}</span>
+        {{/if}}
+        <select id="emailsSelect" title="Emails">
+            {{#if emailsCount}}
+                {{#each emails}}
+                    <option value="{{ownerId}}">{{emailOwner}}({{emailItem}})</option>
+                {{/each}}
+            {{else}}
+                <option>No emails</option>
+            {{/if}}
+        </select>
+    </div>
+    <br/>
+    <div class="container">
+        <button id="sendEmail" class="navbar-nav btn btn-primary" style="float: right">Send</button>
+        <input id="chosenEmails" type="text" style="margin-left: -10px; width: 80%"/>
+        <label id="sendResult" class="label-success"></label>
+    </div>
+</template>

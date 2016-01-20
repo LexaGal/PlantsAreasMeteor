@@ -1,3 +1,9 @@
+div.inline { float:right; }
+.clearBoth { clear:both; }
+
+.stretcher {
+    overflow: hidden;
+}
 .icon {
     background-size: 40px 40px;
     background-repeat: no-repeat;

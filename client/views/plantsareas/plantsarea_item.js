@@ -2,8 +2,12 @@ var POST_HEIGHT = 80;
 var Positions = new Meteor.Collection(null);
 Template.plantsareaItem.helpers({
 
-    ownPost: function () {
+    ownPost: function() {
         return UserNET && this.userId == UserNET._id;
+    },
+
+    numberOfSensors: function() {
+      return Sensors.find({plantsareaId: this._id}).count();
     },
 
     //upvotedClass: function() {
