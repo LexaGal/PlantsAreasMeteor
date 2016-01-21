@@ -6,9 +6,9 @@ Template.plantsareaItem.helpers({
         return UserNET && this.userId == UserNET._id;
     },
 
-    numberOfSensors: function() {
-      return Sensors.find({plantsareaId: this._id}).count();
-    },
+    //numberOfSensors: function() {
+    //  return Sensors.find({plantsareaId: this._id}).count();
+    //},
 
     //upvotedClass: function() {
     //    var userId = Meteor.userId();

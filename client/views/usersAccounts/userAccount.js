@@ -35,7 +35,7 @@ Template.userAccount.events({
 
 Template.userAccount.helpers({
 
-    loggedInUser: function () {
-        return UserNET != null;
+    isLoggedIn: function () {
+        return UserNET;
     }
 });

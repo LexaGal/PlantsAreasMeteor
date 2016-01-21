@@ -6,10 +6,12 @@ Template.header.helpers({
         var active = _.any(args, function (name) {
             return Router.current() && Router.current().route.getName() === name
         });
-
         return active && 'active';
-    }
+    },
 
+    isLoggedIn: function() {
+        return UserNET;
+    }
     //photoURL: function () {
     //    if (Meteor.user()) {
     //        if (Meteor.user().services.google) {

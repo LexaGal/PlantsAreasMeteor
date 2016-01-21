@@ -12,26 +12,32 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="{{activeRouteClass 'home' 'newPlantsareas'}}">
-                        <a href="{{pathFor 'newPlantsareas'}}">New</a>
-                    </li>
-                    <li class="{{activeRouteClass 'bySensorsPlantsareas'}}">
-                        <a href="{{pathFor 'bySensorsPlantsareas'}}">By sensors</a>
-                    </li>
+                <!--{{#if isLoggedIn}}-->
+                    <ul class="nav navbar-nav">
+                        <li class="{{activeRouteClass 'home' 'newPlantsareas'}}">
+                            <a href="{{pathFor 'newPlantsareas'}}">New</a>
+                        </li>
+                        <li class="{{activeRouteClass 'bySensorsPlantsareas'}}">
+                            <a href="{{pathFor 'bySensorsPlantsareas'}}">By sensors</a>
+                        </li>
+                        <li class="dropdown">
+                            {{> notifications}}
+                        </li>
+                    </ul>
+                <!--{{/if}}-->
+
                     <!--{{#if currentUser}}-->
-                        <!--<li class="{{activeRouteClass 'plantsareaSubmit'}}">-->
-                            <!--<a href="{{pathFor 'plantsareaSubmit'}}">New plantsarea</a>-->
-                        <!--</li>-->
-                        <!--<li class="dropdown">-->
-                            <!--&lt;!&ndash;{{> notifications}}&ndash;&gt;-->
-                        <!--</li>-->
+                <!--<li class="{{activeRouteClass 'plantsareaSubmit'}}">-->
+                <!--<a href="{{pathFor 'plantsareaSubmit'}}">New plantsarea</a>-->
+                <!--</li>-->
                     <!--{{/if}}-->
-                </ul>
                 <!--<ul class="nav navbar-nav"></ul>-->
+
                 <ul class="nav navbar-nav navbar-right">
+
                     <!--<img src="{{photoURL}}" class="icon">-->
                     <!--{{> loginButtons}}-->
+
                     <li class="dropdown">
                         {{> userAccount}}
                     </li>

@@ -1,0 +1,9 @@
+<template name="notificationItem">
+    <li>
+        {{#with this}}
+            <a href="{{pathFor route='plantsareaPage' _id = this.postId}}">
+                <strong>{{notificationInfo}}</strong>
+            </a>
+        {{/with}}
+    </li>
+</template>
