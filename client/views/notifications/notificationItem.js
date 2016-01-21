@@ -1,7 +1,7 @@
 Template.notificationItem.helpers({
 
     notificationInfo: function() {
-        return this.dateTime + " " + this.Info;
+        return this.dateTime + " " + this.info;
     }
 });
 

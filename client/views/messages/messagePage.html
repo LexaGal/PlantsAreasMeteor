@@ -1,5 +1,7 @@
 <template name="messagePage" xmlns="http://www.w3.org/1999/html">
-    {{> messageItem}}
+    <div class="text-info">
+        <h3> Send: {{dateTime}}, Value: {{parameterValue}} </h3>
+    </div>
     <div>
         Email addresses:
         {{#if emailsCount}}
@@ -17,9 +19,10 @@
     </div>
     <br/>
     <div class="container">
-        <input id="chosenEmails" disabled="disabled" type="text" style="margin-left: -20px; width: 80%"/>
+        <input id="chosenEmails" disabled="disabled" type="text" style="margin-left: -20px; width: 90%"/>
         <button id="sendEmails" class="navbar-nav btn btn-primary" style="float: right">Send</button>
-        <button id="clearEmails" class="navbar-nav btn btn-primary" style="margin-right: 10px; float: right">Clear</button>
+        <button id="clearEmails" class="navbar-nav btn btn-primary" style="margin-right: 5px; float: right">Clear
+        </button>
     </div>
     <label id="successResult" class="text-success"></label>
     <label id="errorResult" class="text-danger"></label>

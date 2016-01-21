@@ -12,7 +12,6 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse">
-                <!--{{#if isLoggedIn}}-->
                     <ul class="nav navbar-nav">
                         <li class="{{activeRouteClass 'home' 'newPlantsareas'}}">
                             <a href="{{pathFor 'newPlantsareas'}}">New</a>
@@ -24,7 +23,8 @@
                             {{> notifications}}
                         </li>
                     </ul>
-                <!--{{/if}}-->
+                    <!--{{#if isLoggedIn}}-->
+                    <!--{{/if}}-->
 
                     <!--{{#if currentUser}}-->
                 <!--<li class="{{activeRouteClass 'plantsareaSubmit'}}">-->

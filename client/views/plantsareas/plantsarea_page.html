@@ -1,5 +1,7 @@
 <template name="plantsareaPage">
-    {{> plantsareaItem}}
+    <div class="post">
+        <h3> {{name}} ({{numberOfSensors}} sensors) </h3>
+    </div>
     <ul class="comments">
         <h3>Sensors</h3>
         {{#each sensors}}
@@ -7,9 +9,9 @@
         {{/each}}
     </ul>
 
-    <!--{{#if currentUser}}-->
-        <!--{{> commentSubmit}}-->
-    <!--{{else}}-->
-        <!--<p>Please log in to leave a comment.</p>-->
-    <!--{{/if}}-->
+        <!--{{#if currentUser}}-->
+    <!--{{> commentSubmit}}-->
+        <!--{{else}}-->
+    <!--<p>Please log in to leave a comment.</p>-->
+        <!--{{/if}}-->
 </template>
