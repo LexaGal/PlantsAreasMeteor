@@ -75,7 +75,6 @@ Template.messagePage.events({
 
         function clear(res) {
             $('#' + res).text("");
-            $('#' + res).text("");
         }
 
         for (var j = 0; j < i; j++) {
