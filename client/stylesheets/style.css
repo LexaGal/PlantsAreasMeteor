@@ -1,9 +1,50 @@
-div.inline { float:right; }
-.clearBoth { clear:both; }
+.list {
+    border: solid 2px black;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 10px;
+}
+
+.message {
+    margin-top: 15px;
+    padding: 15px;
+    border: solid green 3px;
+    border-radius: 100%;
+}
+
+.message:first-child{
+    margin-right: 0px;
+}
+
+.bordered {
+    width: 300px;
+    border: black solid 3px;
+    border-radius: 15%;
+}
+
+.bordered input {
+    width: 293px;
+}
+
+div.inline {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
 
 .stretcher {
     overflow: hidden;
 }
+
 .icon {
     background-size: 40px 40px;
     background-repeat: no-repeat;
@@ -16,6 +57,7 @@ div.inline { float:right; }
 .post {
     position: relative;
     transition: all 300ms 0ms ease-in;
+    background-color: lightgray;
 }
 
 .grid-block, .main, .post, .comments li, .comment-form {
@@ -32,9 +74,16 @@ div.inline { float:right; }
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-body {
-    background: #eee;
-    color: #666666;
+.body {
+    background: linear-gradient(darkgreen, yellow) no-repeat fixed;
+}
+
+body{
+    /*background: url("http://hdwallpaperspretty.com/wp-content/gallery/nature-background-pictures/Nature-wallpaper+(6).jpg") no-repeat;*/
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(darkgreen, yellow) no-repeat fixed;
+    color: black;
 }
 
 .navbar {

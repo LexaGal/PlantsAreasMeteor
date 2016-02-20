@@ -8,7 +8,7 @@ Template.userAccount.events({
         var userData = {
             first_name: $(event.target).find('[name=first_name]').val(),
             last_name: $(event.target).find('[name=last_name]').val(),
-            passwordHash: Package.sha.SHA256($(event.target).find('[name=password]').val())
+            passwordToken: Package.sha.SHA256($(event.target).find('[name=password]').val())
         };
 
         Meteor.call('validateUser', userData, function (error, user) {

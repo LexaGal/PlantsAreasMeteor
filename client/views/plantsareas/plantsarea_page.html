@@ -2,12 +2,11 @@
     <div class="post">
         <h3> {{name}} ({{numberOfSensors}} sensors) </h3>
     </div>
-    <ul class="comments">
-        <h3>Sensors</h3>
+    <div>
         {{#each sensors}}
             {{> sensor}}
         {{/each}}
-    </ul>
+    </div>
 
         <!--{{#if currentUser}}-->
     <!--{{> commentSubmit}}-->

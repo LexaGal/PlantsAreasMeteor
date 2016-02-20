@@ -1,12 +1,12 @@
 <template name="sensor">
-    <li class="dropdown navbar-nav navbar-right">
+    <div class="message dropdown navbar-nav navbar-right">
         {{> messages}}
-    </li>
-    <li class="list-group-item-info">
+    </div>
+    <div class="list-group-item-text list">
         <p class="date"><b>Updated on: </b>{{dateTime}}</p>
         <p><b>Type: </b>{{measurableType}}</p>
         <p><b>Timeout: </b>{{measuringTimeout}}</p>
         <p><b>On: </b>{{isOn}}</p>
         <p><b>Custom: </b>{{isCustom}}</p>
-    </li>
+    </div>
 </template>

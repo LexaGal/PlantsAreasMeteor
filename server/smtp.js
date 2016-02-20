@@ -42,19 +42,11 @@ Meteor.methods({
         // without waiting for the email sending to complete.
         this.unblock();
 
-        //emailExistence.check(to, function(err, res) {
-        //
-        //});
-
         Email.send({
             to: to,
             from: "galushkin.aleksey@gmail.com",
             subject: subject,
             text: text
         });
-        //, function () {
-        //    var error = "Not sent";
-        //    return error;
-        //});
     }
 });

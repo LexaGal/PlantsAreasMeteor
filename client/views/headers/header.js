@@ -11,6 +11,10 @@ Template.header.helpers({
 
     isLoggedIn: function() {
         return UserNET;
+    },
+
+    isNotLoggedIn: function() {
+        return UserNET == null;
     }
     //photoURL: function () {
     //    if (Meteor.user()) {

@@ -23,8 +23,6 @@
                             {{> notifications}}
                         </li>
                     </ul>
-                    <!--{{#if isLoggedIn}}-->
-                    <!--{{/if}}-->
 
                     <!--{{#if currentUser}}-->
                 <!--<li class="{{activeRouteClass 'plantsareaSubmit'}}">-->
@@ -41,6 +39,11 @@
                     <li class="dropdown">
                         {{> userAccount}}
                     </li>
+                    {{#if isNotLoggedIn}}
+                        <li class="dropdown">
+                            {{> register}}
+                        </li>
+                    {{/if}}
                 </ul>
             </div>
         </div>
