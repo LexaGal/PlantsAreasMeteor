@@ -1,5 +1,15 @@
+.form-controls-font{
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+}
+
+.validationError {
+    color: red;
+    font-style: italic;
+}
+
 .red {
-    background-color: #ff100e;
+    background-color: red;
 }
 
 .ok {
@@ -23,7 +33,7 @@
 .message {
     margin-top: 15px;
     padding: 15px;
-    border: solid green 3px;
+    border: solid dodgerblue 3px;
     border-radius: 100%;
 }
 
@@ -83,14 +93,14 @@ div.inline {
 }
 
 .body {
-    background: linear-gradient(darkgreen, yellow) no-repeat fixed;
+    background: linear-gradient(dodgerblue, whitesmoke) no-repeat fixed;
 }
 
 body{
     /*background: url("http://hdwallpaperspretty.com/wp-content/gallery/nature-background-pictures/Nature-wallpaper+(6).jpg") no-repeat;*/
     height: 100%;
     margin: 0;
-    background: linear-gradient(darkgreen, yellow) no-repeat fixed;
+    background: linear-gradient(dodgerblue, whitesmoke) no-repeat fixed;
     color: black;
 }
 

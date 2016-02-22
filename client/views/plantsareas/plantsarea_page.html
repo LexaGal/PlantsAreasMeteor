@@ -1,6 +1,9 @@
 <template name="plantsareaPage">
     <div class="post">
-        <h3> {{name}} ({{numberOfSensors}} sensors) </h3>
+        <div class="post-content">
+            <h3> {{name}} ({{numberOfSensors}} sensors) </h3>
+        </div>
+        <a href="{{pathFor 'plantsareaEdit'}}" class="discuss btn btn-default">Edit</a>
     </div>
     <div>
         {{#each sensors}}

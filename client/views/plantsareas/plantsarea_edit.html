@@ -1,0 +1,30 @@
+<template name="plantsareaEdit">
+    <form id="plantsareaEditForm" class="main">
+        <div class="control-group">
+            <div class="controls">
+                <label class="control-label">Name
+                    <input name="name_plantsareaItem" type="text" value="{{name}}" class="form-control required" placeholder="Plantsarea name" />
+                </label>
+            </div>
+        </div>
+
+        <!--<div class="control-group">-->
+            <!--<label class="control-label" for="title">Title</label>-->
+            <!--<div class="controls">-->
+                <!--<input name="title" type="text" value="{{title}}" placeholder="Name your post"/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="submit" value="Save" class="btn btn-primary submit"/>
+            </div>
+        </div>
+        <hr/>
+        <div class="control-group">
+            <div class="controls">
+                <a class="btn btn-danger delete" href="#">Delete</a>
+            </div>
+        </div>
+    </form>
+</template>

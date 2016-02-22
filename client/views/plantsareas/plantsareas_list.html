@@ -3,11 +3,14 @@
         {{#each plantsareasWithRank}}
             {{> plantsareaItem}}
         {{/each}}
+        <div>
+            {{> newPlantsareaItem}}
+        </div>
         {{#if nextPath}}
-            <a class="load-more" href="{{nextPath}}">Load more</a>
-            {{#unless ready}}
-                {{> spinner}}
-            {{/unless}}
-        {{/if}}
+        <a class="load-more" href="{{nextPath}}">Load more</a>
+        {{#unless ready}}
+            {{> spinner}}
+        {{/unless}}
+    {{/if}}
     </div>
 </template>
