@@ -18,6 +18,10 @@ Meteor.publish('singlePlantsarea', function (id) {
     return id && PlantsAreas.find(id);
 });
 
+Meteor.publish('singleSensor', function (id) {
+    return id && Sensors.find(id);
+});
+
 Meteor.publish('usersNET', function()
 {
    return UsersNET.find();
