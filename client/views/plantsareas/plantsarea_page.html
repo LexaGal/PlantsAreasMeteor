@@ -1,7 +1,7 @@
 <template name="plantsareaPage">
     <div class="post">
         <div class="post-content">
-            <h3> {{name}} ({{numberOfSensors}} sensors) </h3>
+            <h3> {{name}} ({{numberOfSensors}} sensor(s)) </h3>
         </div>
         <a href="{{pathFor 'plantsareaEdit'}}" class="discuss btn btn-default">Edit</a>
     </div>
@@ -10,10 +10,9 @@
             {{> sensor}}
         {{/each}}
     </div>
-
-        <!--{{#if currentUser}}-->
-    <!--{{> commentSubmit}}-->
-        <!--{{else}}-->
-    <!--<p>Please log in to leave a comment.</p>-->
-        <!--{{/if}}-->
+    {{#if currentUser}}
+        {{> sensorSubmit}}
+    {{else}}
+        <p>Please log in to add a sensor.</p>
+    {{/if}}
 </template>

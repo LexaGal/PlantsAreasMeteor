@@ -1,38 +1,37 @@
-<template name="sensorSubmit">
-    <button id="addButton" class="addButton btn btn-primary">Add sensor</button>
-    <form id="sensorSubmit" style="visibility: collapse" class="body bordered form-controls-font">
+<template name="sensorEdit">
+    <form id="sensorEdit" style="visibility: visible" class="bordered body form-controls-font">
         <div class="form-group">
             <div class="controls">
                 <label title="Temperature, humidity, sun/wind level">Measurable type
-                    <input name="measurableType" value="Type A" type="text" class="form-control required"/>
+                    <input name="measurableType" value="{{measurableType}}" type="text" class="form-control required"/>
                 </label>
             </div>
         </div>
         <div class="form-group">
             <div class="controls">
                 <label title="Hours:Minutes:Seconds">Measuring timeout
-                    <input name="measuringTimeout" value="00:00:05" type="time" step="1" class="form-control required"/>
+                    <input name="measuringTimeout" value="{{measuringTimeout}}" type="time" step="1" class="form-control required"/>
                 </label>
             </div>
         </div>
         <div class="form-group">
             <div class="controls">
                 <label>Is turned on
+                     <input id="isOn" type="checkbox" {{valueIsOn}} style="width: 40px" class="form-control required"/>
                 </label>
-                <input id="isOn" type="checkbox" style="width: 40px" class="form-control required"/>
             </div>
         </div>
         <div class="form-group">
             <div class="controls">
                 <label>Is custom
+                    <input id="isCustom" type="checkbox" {{valueIsCustom}} style="width: 40px" class="form-control required"/>
                 </label>
-                <input id="isCustom" type="checkbox" style="width: 40px" class="form-control required"/>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group center">
             <div class="center">
                 <button type="submit" class="btn btn-primary">Save</button>
-                <button id="closeButton" class="closeButton btn">Close</button>
+                <a class="btn btn-danger delete" href="#">Delete</a>
             </div>
         </div>
     </form>

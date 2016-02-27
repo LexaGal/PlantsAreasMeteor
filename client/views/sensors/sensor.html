@@ -2,6 +2,9 @@
     <div class="message dropdown navbar-nav navbar-right">
         {{> messages}}
     </div>
+    <div class="navbar-nav navbar-right">
+        <a href="{{pathFor 'sensorEdit'}}" style="margin: 30px" class="discuss btn btn-default">Edit</a>
+    </div>
     <div class="list-group-item-text list">
         <ul>
             <li class="date"><b>Updated on: </b>{{dateTime}}</li>

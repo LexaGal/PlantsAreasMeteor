@@ -33,9 +33,8 @@ Template.plantsareaEdit.events({
                 Errors.throw(error.reason);
                 return;
             }
-            if (result.postExists) {
+            if (result.plantsareaExists) {
                 Errors.throw('This name has already been taken');
-                return;
             }
         });
         Router.go('plantsareaPage', {_id: plantsareaId});
@@ -49,9 +48,7 @@ Template.plantsareaEdit.events({
             Meteor.call('plantsareaRemove', plantsareaId,  function(error) {
                 if (error) {
                     Errors.throw(error.reason);
-                    return;
                 }
-
             });
             Router.go('home');
         }
