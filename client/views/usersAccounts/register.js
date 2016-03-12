@@ -91,7 +91,7 @@ Template.register.events({
             if (user == null) {
                 Errors.throw("An error occurred during saving user data");
             } else {
-                UserNET = user;
+                Session.set("UserNET", user);
                 $('#loginLabel').text("You are logged in as ".concat(UserNET.name)).append(html);
                 $('.dropdown.open .dropdown-toggle').dropdown('toggle');
             }

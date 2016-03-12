@@ -10,11 +10,11 @@ Template.header.helpers({
     },
 
     isLoggedIn: function() {
-        return UserNET;
+        return Session.get("UserNET");
     },
 
     isNotLoggedIn: function() {
-        return UserNET == null;
+        return Session.get("UserNET") == null;
     }
     //photoURL: function () {
     //    if (Meteor.user()) {

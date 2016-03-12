@@ -1,5 +1,5 @@
-Template.newPlantsareaItem.onRendered( function() {
-    $( "#newPlantsareaItemForm" ).validate({
+Template.newPlantsareaItem.onRendered(function () {
+    $("#newPlantsareaItemForm").validate({
         rules: {
             name_plantsareaItem: {
                 required: true,
@@ -12,7 +12,7 @@ Template.newPlantsareaItem.onRendered( function() {
                 plantsareaUnique: "Plantsarea with that name already exists"
             }
         },
-        highlight: function() {
+        highlight: function () {
             $("[id*='error']").addClass('validationError')
         }
     });
@@ -24,7 +24,8 @@ Template.newPlantsareaItem.events({
         event.preventDefault();
 
         var name = $(event.target).find('[name=name_plantsareaItem]').val();
-        Meteor.call('plantsareaInsert', name, UserNET._id, function () {
+
+        Meteor.call('plantsareaInsert', name.toLowerCase(), Session.get("UserNET")._id, function () {
             Router.go('plantsareasList');
         });
     }

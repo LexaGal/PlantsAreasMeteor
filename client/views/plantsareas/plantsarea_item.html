@@ -1,17 +1,33 @@
 <template name="plantsareaItem">
-    <div class="post" {{attributes}}>
+    <div class="plantsarea" {{attributes}}>
         <!--<a href="#" class="upvote btn {{upvotedClass}}">⬆</a>-->
-        <div class="post-content">
-            <h3> {{name}} ({{numberOfSensors}} sensor(s)) </h3>
-            <p>
-                <!--{{pluralize votes "Vote"}},-->
-                <!--submitted by {{author}},-->
-                <!--<a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>-->
-                <!--{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}-->
-            </p>
+        <!--style="display: table-row; border-spacing: 10px; padding: 10px">-->
+        <!--<h3 style="display: table-cell">-->
+        <!--<div class="post-content">-->
+        <!--<p>-->
+        <!--{{pluralize votes "Vote"}},-->
+        <!--submitted by {{author}},-->
+        <!--<a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>-->
+        <!--{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}-->
+        <!--</p>-->
+        <div style="float: left">
+            {{name}} ({{numberOfSensors}} sensor(s))
         </div>
-        <!--<a href="{{pathFor 'deletePlantsareaPage'}}" class="discuss btn btn-default">Delete</a>-->
-        <a href="{{pathFor 'plantsareaEdit'}}" class="discuss btn btn-default">Edit</a>
-        <a href="{{pathFor 'plantsareaPage'}}" class="discuss btn btn-default">Sensors</a>
+
+        <div style="float: inherit">
+            <a href="#" style="margin-left: 60px; background: white; font-style: italic; font-weight: 500;">Last
+                modification date: {{lastDate}}
+            </a>
+        </div>
+        <div style="float: right; margin-top: -20px; margin-left: 20px;">
+            <img src="{{image}}" width="100px" height="100px">
+        </div>
+        <div style="float: right; margin-top: -20px">
+            <a href="{{pathFor 'plantsareaEdit'}}" class="discuss btn btn-default">Edit</a>
+        </div>
+        <div style="float: right; margin-top: -20px">
+            <a href="{{pathFor 'plantsareaPage'}}" class="discuss btn btn-default">Sensors</a>
+        </div>
     </div>
+    <!--</div>-->
 </template>

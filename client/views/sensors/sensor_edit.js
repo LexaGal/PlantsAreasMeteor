@@ -8,11 +8,14 @@ Template.sensorEdit.events({
         var isCustom = $(e.target).find('[name=isCustom]');
         var sensorId = this._id;
 
+        var plantsareaId = Session.get("plantsareaId");
+
         var sensor = {
             measurableType: measurableType.val(),
             measuringTimeout: measuringTimeout.val(),
             isCustom: $('#isCustom:checked').val(),
             isOn: $('#isOn:checked').val(),
+            plantsareaId: plantsareaId
         };
 
         sensor.isCustom = (sensor.isCustom == "on").toString();
@@ -28,8 +31,7 @@ Template.sensorEdit.events({
                 return;
             }
         });
-        var plantsareaIdStr = Session.get("plantsareaId");
-        Router.go('plantsareaPage', {_id: plantsareaIdStr});
+        Router.go('plantsareaPage', {_id: plantsareaId});
     },
 
     'click .delete': function (e) {

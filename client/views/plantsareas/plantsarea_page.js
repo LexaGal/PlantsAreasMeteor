@@ -4,6 +4,6 @@ Template.plantsareaPage.helpers({
     },
 
     currentUser: function() {
-        return UserNET != null;
+        return Session.get("UserNET") != null;
     }
 });

@@ -28,7 +28,7 @@ Template.plantsareaEdit.events({
             name: $(e.target).find('[name=name_plantsareaItem]').val()
         };
 
-        Meteor.call('plantsareaUpdate', plantsarea.name, plantsareaId, function(error, result) {
+        Meteor.call('plantsareaUpdate', plantsarea.name.toLowerCase(), plantsareaId, function(error, result) {
             if (error) {
                 Errors.throw(error.reason);
                 return;

@@ -1,9 +1,9 @@
 Template.notifications.helpers({
     notifications: function() {
-        return Notifications.find({userId: UserNET._id, read: "False"});
+        return Notifications.find({userId: Session.get("UserNET")._id, read: "False"});
     },
     notificationsCount: function() {
-        return Notifications.find({userId: UserNET._id, read: "False"}).count();
+        return Notifications.find({userId: Session.get("UserNET")._id, read: "False"}).count();
     }
 });
 

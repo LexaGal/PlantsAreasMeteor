@@ -47,7 +47,7 @@
 
 .bordered {
     width: 300px;
-    border: lightgreen solid 3px;
+    border: seagreen solid 3px;
     /*border-radius: 15%;*/
 }
 
@@ -76,10 +76,10 @@ div.inline {
     border-radius: 50%;
 }
 
-.post {
+.plantsarea {
     position: relative;
     transition: all 300ms 0ms ease-in;
-    background-color: #eeeeee;
+    background: url("http://localhost:3000/public/image1.png") repeat-x;
 }
 
 .grid-block, .main, .post, .comments li, .comment-form {
@@ -103,7 +103,7 @@ div.inline {
 body{
     height: 100%;
     margin: 0;
-    background: linear-gradient(dodgerblue, white) no-repeat fixed;
+    background: linear-gradient(seagreen, white) no-repeat fixed;
     color: black;
 }
 
@@ -129,7 +129,10 @@ body{
     /* For IE 6/7 (trigger hasLayout) */
     *zoom: 1;
     position: relative;
-    opacity: 1;
+}
+
+.post div:after {
+    opacity: 0.5;
 }
 
 .post:before, .post:after {
@@ -165,8 +168,10 @@ body{
     float: left;
 }
 
-.post .post-content {
+.plantsarea .post-content {
+    /*repeat-x;*/
     float: left;
+    align-content: center;
 }
 
 .post .post-content h3 {
