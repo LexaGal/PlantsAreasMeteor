@@ -8,7 +8,7 @@ Template.sensorSubmit.events({
         var isCustom = $(e.target).find('[name=isCustom]');
 
         var sensor = {
-            measurableType: measurableType.val(),
+            measurableType: measurableType.val().toLowerCase(),
             measuringTimeout: measuringTimeout.val(),
             isCustom: $('#isCustom:checked').val(),
             isOn: $('#isOn:checked').val(),

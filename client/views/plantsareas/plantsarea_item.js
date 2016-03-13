@@ -14,8 +14,8 @@ Template.plantsareaItem.helpers({
 
     image: function () {
         var imageName = this.name.replace(/\s+/g, '') + '.jpg';
-        var clientPath = '/pictures/' + imageName.toLowerCase();
-        Meteor.call('getImage', this.img, imageName, this._id, function (err) {
+        var clientPath = '/pictures/plantsareas/session/' + imageName.toLowerCase();
+        Meteor.call('getPlantsareaImage', this.img, imageName, this._id, function (err) {
             if (err) {
                 Errors.throw("Cannot read files from directory");
             }
