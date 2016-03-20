@@ -10,17 +10,13 @@
         <!--<a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>-->
         <!--{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}-->
         <!--</p>-->
-        <div style="float: left">
-            {{name}} ({{numberOfSensors}} sensor(s))
-        </div>
-
-        <div style="float: inherit">
-            <a href="#" style="margin-left: 60px; background: white; font-style: italic; font-weight: 500;">Last
-                modification date: {{lastDate}}
-            </a>
-        </div>
-        <div style="float: right; margin-top: -20px; margin-left: 20px;">
+        <div style="margin: 20px" class="navbar-nav navbar-left">
             <img src="{{image}}" width="100px" height="100px">
+        </div>
+        <div style="margin-top: 50px" class="navbar-nav navbar-left">
+            <span style="font-size: large;">{{name}} ({{numberOfSensors}} sensor(s))</span>
+            <a href="#" style="margin-left: 20px; background: white; font-style: italic; font-weight: 500;">Last
+                modification: {{lastDate}} </a>
         </div>
         <div style="float: right; margin-top: -20px">
             <a href="{{pathFor 'plantsareaEdit'}}" class="discuss btn btn-default">Edit</a>

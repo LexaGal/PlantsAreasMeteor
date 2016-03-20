@@ -1,14 +1,14 @@
 <template name="sensor">
-    <div style="margin: 20px" class="navbar-nav navbar-right">
+    <div style="margin: 20px" class="navbar-nav navbar-left">
         <img src="{{image}}" width="100px" height="100px">
     </div>
-    <div class="message dropdown navbar-nav navbar-right">
+   <div class="navbar-nav navbar-right" style="margin-right: 20px">
+        <a href="{{pathFor 'sensorEdit'}}" class="discuss btn btn-default">Edit</a>
+    </div>
+     <div class="message dropdown navbar-nav navbar-right">
         {{> messages}}
     </div>
-    <div class="navbar-nav navbar-right">
-        <a href="{{pathFor 'sensorEdit'}}" style="margin: 30px" class="discuss btn btn-default">Edit</a>
-    </div>
-    <div class="list-group-item-text list">
+    <div style="padding-left: 20px" class="list-group-item-text list">
         <ul>
             <li class="date"><b>Updated on: </b>{{dateTime}}</li>
             <li><b>Type: </b>{{measurableType}}</li>

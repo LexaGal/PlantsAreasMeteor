@@ -1,3 +1,9 @@
+.badge {
+    font-size: 20px;
+    background-color: grey;
+    color: white;
+}
+
 .addButton {
     margin-top: 7px;
 }
@@ -21,8 +27,8 @@
 }
 
 .list {
-    border: solid 2px dodgerblue;
-    background-color: white;
+    border: solid 3px dodgerblue;
+    background: linear-gradient(to right, white, lightblue);
     margin-top: 10px;
     border-radius: 20px;
 }
@@ -86,9 +92,10 @@ div.inline {
     position: relative;
     transition: all 300ms 0ms ease-in;
     background: white;
+    /*linear-gradient(to right, white, lightgreen);*/
     border: black 2px solid;
     border-radius: 8px;
-    height: 120px;
+    height: 160px;
     padding: 10px;
 }
 
@@ -209,9 +216,11 @@ body{
 .discuss {
     display: block;
     float: right;
-    margin-top: 7px;
-    margin-left: 7px;
-    background-color: lightgreen;
+    /*margin-top: 7px;*/
+    margin: 50px 10px 0px 10px;
+    background-color: lawngreen;
+    font-size: large;
+    font-weight: bold;
 }
 
 .comments {

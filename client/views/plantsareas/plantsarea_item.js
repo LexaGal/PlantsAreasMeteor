@@ -13,14 +13,20 @@ Template.plantsareaItem.helpers({
     },
 
     image: function () {
-        var imageName = this.name.replace(/\s+/g, '') + '.jpg';
-        var clientPath = '/pictures/plantsareas/session/' + imageName.toLowerCase();
-        Meteor.call('getPlantsareaImage', this.img, imageName, this._id, function (err) {
+        var imageName = this.name.replace(/\s+/g, '').toLowerCase() + '.jpg';
+        var clientPath = '/pictures/plantsareas/';
+        //+ imageName;
+        Meteor.call('getPlantsareaImage', this.img, imageName, this._id, function (err, link) {
             if (err) {
                 Errors.throw("Cannot read files from directory");
             }
+            Session.set(imageName, link);
         });
-        return clientPath;
+        var resImg = Session.get(imageName);
+        if (resImg) {
+            return clientPath + resImg;
+        }
+        return clientPath + 'plant.jpg';
         //return '/pictures/plant.jpg';
         //var u8 = new Uint8Array(atob(this.img).split("").map(function(c) {
         //    return c.charCodeAt(0);
