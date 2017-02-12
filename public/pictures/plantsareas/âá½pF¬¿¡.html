@@ -1,0 +1,1032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://emcd.grsu.by/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="http://emcd.grsu.by/theme/premium-1/styles.php" />
+
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="http://emcd.grsu.by/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://emcd.grsu.by/theme/standard/styles_ie6.css" />
+<![endif]-->
+
+
+    <meta name="keywords" content="Администрирование информационных систем: Тест 1. Основы, интерфейс командной строки " />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://emcd.grsu.by/theme/pix/touch/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://emcd.grsu.by/theme/pix/touch/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://emcd.grsu.by/theme/pix/touch/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="http://emcd.grsu.by/theme/pix/touch/apple-touch-icon-57x57-precomposed.png" />
+    <title>Администрирование информационных систем: Тест 1. Основы, интерфейс командной строки</title>
+    <link rel="shortcut icon" href="http://emcd.grsu.by/theme/premium-1/img/favicon.png" />
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(http://emcd.grsu.by/lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="http://emcd.grsu.by/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/cookies.js"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/ufo.js"></script>
+<script type="text/javascript" src="http://emcd.grsu.by/lib/dropdown.js"></script>  
+
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url, name, options, fullscreen) {
+    var fullurl = "http://emcd.grsu.by" + url;
+    var windowobj = window.open(fullurl, name, options);
+    if (!windowobj) {
+        return true;
+    }
+    if (fullscreen) {
+        windowobj.moveTo(0, 0);
+        windowobj.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    windowobj.focus();
+    return false;
+}
+
+function uncheckall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+    }
+}
+
+function checkall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+    }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+	<script src="http://emcd.grsu.by/theme/premium-1/js/jquery-1.6.2.min.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45009742-1', 'grsu.by');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body  class="mod-quiz course-112722 dir-ltr lang-ru_utf8" id="mod-quiz-review">
+<div id="page">
+<div class="container_12">
+<div id="wrap">
+<div class="wrapper">
+    <div id="header" class=" clearfix">    <div class="grid_3" id="logo">
+		<div class="logo">
+			<a href="http://emcd.grsu.by">
+				<img src="http://emcd.grsu.by/theme/premium-1/img/logo.png" />
+			</a>
+		</div>
+	</div>
+	<div class="grid_9" id="topnav">
+		<div class="topnav">
+			<ul id="nav" class="dropdown dropdown-horizontal" style="float: right">
+				<li><a href="http://emcd.grsu.by/" class="home">Главная</a></li>
+				<li><a href="http://emcd.grsu.by/calendar/view.php" title="Календарь" class="on-cal">Календарь</a></li>
+				<li><a href="http://emcd.grsu.by/mod/forum/" title="Форум" class="forum">Форум</a></li>
+									<li><a  href="http://emcd.grsu.by/login/logout.php?sesskey=QEoVn4ICTn" title="Выйти из Moodle" class="logout">Выход</a></li>
+							</ul>			
+		</div>
+	</div>
+	<div class="clear">&nbsp;</div>
+    </div>
+    <div class="navbar clearfix"><div class="navbutton">&nbsp;</div></div>
+	<div class="breadcrumb"><div class="padder"><h2 class="accesshide " >Вы здесь</h2> <ul>
+<li class="first"><a  onclick="this.target='_top'" href="http://emcd.grsu.by/">СОП</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a  onclick="this.target='_top'" href="http://emcd.grsu.by/course/view.php?id=112722">Администрирование информационных систем</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a  onclick="this.target='_top'" href="http://emcd.grsu.by/mod/quiz/index.php?id=112722">Тесты</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a  onclick="this.target='_top'" href="http://emcd.grsu.by/mod/quiz/view.php?id=971113">Тест 1. Основы, интерфейс командной строки</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> Обзор попытки 1</li></ul></div></div>
+    <div class="clear">&nbsp;</div>
+    <!-- END OF HEADER -->
+    <div id="content"><div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div><h2   class="main">Тест 1. Основы, интерфейс командной строки</h2><h2   class="main">Обзор попытки 1</h2>
+<div class="controls">
+<div class="singlebutton"><form action="view.php" method="get"><div><input type="hidden" name="id" value="971113" /><input type="submit" value="Закончить обзор"   /></div></form></div></div>
+<table class="generaltable generalbox quizreviewsummary"><tbody>
+<tr><th scope="row" class="cell">Тест начат</th><td class="cell">Четверг  31 Март 2016, 20:24</td></tr>
+<tr><th scope="row" class="cell">Завершен</th><td class="cell">Четверг  31 Март 2016, 20:36</td></tr>
+<tr><th scope="row" class="cell">Прошло времени</th><td class="cell">11 мин 48 сек</td></tr>
+<tr><th scope="row" class="cell">Баллов</th><td class="cell">13.5/19</td></tr>
+<tr><th scope="row" class="cell">Оценка</th><td class="cell"><b>7.11</b> из максимума 10 (<b>71</b>%)</td></tr>
+</tbody></table>
+<div id="q1544355" class="que shortanswer clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>1</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Сколько
+виртуальных сетевых адаптеров можно
+подключить к виртуальной машине,
+используя графический интерфейс
+<span lang="en-US">VirtualBox</span>?</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Ответ:   </div>
+
+  <div class="answer">
+    <input type="text" class="" readonly="readonly"  name="resp1544411_"   value="4"  size="80"/>
+      </div>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544360" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>2</span>
+          <div class="grade">
+        Баллов: 0/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p lang="en-US" style="margin-bottom: 0cm; line-height: 100%;">В
+каком каталоге файловой системы Linux
+содержатся файлы-ссылки на устройства?</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544412_5472816" name="resp1544412_" checked="checked" type="radio" value="5472816" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544412_5472816">
+            /lib                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544412_5472814" name="resp1544412_"  type="radio" value="5472814" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544412_5472814">
+            /dev                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544412_5472815" name="resp1544412_"  type="radio" value="5472815" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544412_5472815">
+            /etc                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  incorrect">Неверно</div><div class="gradingdetails">Баллов за ответ: 0/1.</div>    </div>  </div>
+</div>
+<div id="q1544367" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>3</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"> </p><p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"><span style="background: transparent;">В
+интерфейсе командной строки Unix-систем
+регистр символов:</span></p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544413_5472831" name="resp1544413_" checked="checked" type="radio" value="5472831" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544413_5472831">
+            учитывается                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544413_5472832" name="resp1544413_"  type="radio" value="5472832" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544413_5472832">
+            не учитывается                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544379" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>4</span>
+          <div class="grade">
+        Баллов: 0.5/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Для перехода
+в домашний каталог следует использовать
+команду:</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите по крайней мере один ответ:  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544414_5472858" name="resp1544414_5472858"   type="checkbox"  value="5472858" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544414_5472858">
+            cd                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544414_5472860" name="resp1544414_5472860"   type="checkbox"  value="5472860" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544414_5472860">
+            cd ../                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544414_5472861" name="resp1544414_5472861"   type="checkbox"  value="5472861" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544414_5472861">
+            cd ./                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544414_5472859" name="resp1544414_5472859" checked="checked"  type="checkbox"  value="5472859" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544414_5472859">
+            cd ~                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  partiallycorrect">Частично верно</div><div class="gradingdetails">Баллов за ответ: 0.5/1.</div>    </div>  </div>
+</div>
+<div id="q1544375" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>5</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Условным
+обозначением текущего каталога является:</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544415_5472848" name="resp1544415_" checked="checked" type="radio" value="5472848" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544415_5472848">
+            точка                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544415_5472849" name="resp1544415_"  type="radio" value="5472849" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544415_5472849">
+            тильда                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544415_5472850" name="resp1544415_"  type="radio" value="5472850" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544415_5472850">
+            две точки                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544408" class="que shortanswer clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>6</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Какой символ
+указывает, что пользователь работает
+под непривилегированной учетной записью?</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Ответ:   </div>
+
+  <div class="answer">
+    <input type="text" class="" readonly="readonly"  name="resp1544416_"   value="$"  size="80"/>
+      </div>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544410" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>7</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"> Сколько локальных консолей доступно
+по умолчанию в режиме командной строки?</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544417_5472922" name="resp1544417_"  type="radio" value="5472922" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544417_5472922">
+            4                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544417_5472921" name="resp1544417_"  type="radio" value="5472921" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544417_5472921">
+            10                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544417_5472920" name="resp1544417_" checked="checked" type="radio" value="5472920" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544417_5472920">
+            6                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544417_5472923" name="resp1544417_"  type="radio" value="5472923" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544417_5472923">
+            2                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544372" class="que shortanswer clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>8</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Какая команда
+показывает текущий каталог?</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Ответ:   </div>
+
+  <div class="answer">
+    <input type="text" class="" readonly="readonly"  name="resp1544418_"   value="pwd"  size="80"/>
+      </div>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544387" class="que match clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>9</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  Сопоставьте команды их функциональному назначению:</div>
+
+
+<div class="ablock clearfix">
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 text">
+          Удаление каталога        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544419_52210" class="select menuresp1544419_52210" name="resp1544419_52210"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="234167359" selected="selected">rmdir</option>
+   <option value="405317301">cd</option>
+   <option value="613958774">ln</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r1">
+        <td class="c0 text">
+          Смена текущего каталога        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544419_52209" class="select menuresp1544419_52209" name="resp1544419_52209"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="234167359">rmdir</option>
+   <option value="405317301" selected="selected">cd</option>
+   <option value="613958774">ln</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r0">
+        <td class="c0 text">
+          Создание ссылки        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544419_52208" class="select menuresp1544419_52208" name="resp1544419_52208"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="234167359">rmdir</option>
+   <option value="405317301">cd</option>
+   <option value="613958774" selected="selected">ln</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+      </table>
+  </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544392" class="que shortanswer clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>10</span>
+          <div class="grade">
+        Баллов: 0/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  Как перейти в каталог local, расположенный в родительском каталоге?</div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Ответ:   </div>
+
+  <div class="answer">
+    <input type="text" class="" readonly="readonly"  name="resp1544420_"   value="./local"  size="80"/>
+      </div>
+    </div>
+    <div class="grading">
+      <div class="correctness  incorrect">Неверно</div><div class="gradingdetails">Баллов за ответ: 0/1.</div>    </div>  </div>
+</div>
+<div id="q1544396" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>11</span>
+          <div class="grade">
+        Баллов: 2/2      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"> Для удаления непустого каталога somedir
+следует использовать команду:</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544421_5472889" name="resp1544421_"  type="radio" value="5472889" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544421_5472889">
+            rmdir -r somedir                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544421_5472891" name="resp1544421_"  type="radio" value="5472891" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544421_5472891">
+            rm somedir                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544421_5472888" name="resp1544421_" checked="checked" type="radio" value="5472888" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544421_5472888">
+            rm -r somedir                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544421_5472890" name="resp1544421_"  type="radio" value="5472890" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544421_5472890">
+            rmdir somedir                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 2/2.</div>    </div>  </div>
+</div>
+<div id="q1544380" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>12</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"><span style="background: transparent;">Для
+перенаправления стандартного потока
+вывода используется:</span></p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите по крайней мере один ответ:  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544422_5472865" name="resp1544422_5472865"   type="checkbox"  value="5472865" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544422_5472865">
+            &lt;&lt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544422_5472862" name="resp1544422_5472862" checked="checked"  type="checkbox"  value="5472862" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544422_5472862">
+            &gt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544422_5472864" name="resp1544422_5472864"   type="checkbox"  value="5472864" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544422_5472864">
+            &lt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544422_5472863" name="resp1544422_5472863" checked="checked"  type="checkbox"  value="5472863" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544422_5472863">
+            &gt;&gt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544383" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>13</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;">Если для
+перенаправления вывода в файл используется
+&gt;&gt;, то</p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544423_5472873" name="resp1544423_" checked="checked" type="radio" value="5472873" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544423_5472873">
+            новые данные данные будут добавлены в конец файла                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544423_5472872" name="resp1544423_"  type="radio" value="5472872" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544423_5472872">
+            предыдущие данные будут перезаписаны новыми данными                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544384" class="que match clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>14</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"> Сопоставьте стандартные потоки их
+обозначениям:</p></div>
+
+
+<div class="ablock clearfix">
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 text">
+          поток вывода        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544424_52200" class="select menuresp1544424_52200" name="resp1544424_52200"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="769686476">stderr</option>
+   <option value="745533053">stdin</option>
+   <option value="901224618" selected="selected">stdout</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r1">
+        <td class="c0 text">
+          поток ввода        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544424_52199" class="select menuresp1544424_52199" name="resp1544424_52199"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="769686476">stderr</option>
+   <option value="745533053" selected="selected">stdin</option>
+   <option value="901224618">stdout</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r0">
+        <td class="c0 text">
+          поток сообщений об ошибках        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544424_52201" class="select menuresp1544424_52201" name="resp1544424_52201"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="769686476" selected="selected">stderr</option>
+   <option value="745533053">stdin</option>
+   <option value="901224618">stdout</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+      </table>
+  </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544397" class="que match clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>15</span>
+          <div class="grade">
+        Баллов: 1/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  Сопоставьте команды их функциональному назначению</div>
+
+
+<div class="ablock clearfix">
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 text">
+          вывод последних строк из файла        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544425_52215" class="select menuresp1544425_52215" name="resp1544425_52215"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="626130217">uniq</option>
+   <option value="645776218">head</option>
+   <option value="397766006" selected="selected">tail</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r1">
+        <td class="c0 text">
+          вывод первых строк из файла        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544425_52216" class="select menuresp1544425_52216" name="resp1544425_52216"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="626130217">uniq</option>
+   <option value="645776218" selected="selected">head</option>
+   <option value="397766006">tail</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+          <tr class="r0">
+        <td class="c0 text">
+          удаление из файла повторяющихся строк        </td>
+        <td class="c1 control  ">
+          <select id="menuresp1544425_52214" class="select menuresp1544425_52214" name="resp1544425_52214"  disabled="disabled">
+   <option value="0"
+>Выбрать...</option>
+   <option value="626130217" selected="selected">uniq</option>
+   <option value="645776218">head</option>
+   <option value="397766006">tail</option>
+</select>
+        </td>
+        <td>
+                     </td>
+              </tr>
+      </table>
+  </div>
+    <div class="grading">
+      <div class="correctness  correct">Верно</div><div class="gradingdetails">Баллов за ответ: 1/1.</div>    </div>  </div>
+</div>
+<div id="q1544402" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>16</span>
+          <div class="grade">
+        Баллов: 0/1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p class="western" style="margin-bottom: 0.28cm; line-height: 106%;"><span style="background: transparent;">Узнать
+длину самой длинной строки в текстовом
+файле можно командой:</span></p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544426_5472900" name="resp1544426_"  type="radio" value="5472900" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544426_5472900">
+            $ wc -L text_file.txt                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544426_5472901" name="resp1544426_"  type="radio" value="5472901" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544426_5472901">
+            $ grep -L text_file.txt                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544426_5472902" name="resp1544426_" checked="checked" type="radio" value="5472902" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544426_5472902">
+            $ cat text_file.txt | grep -L                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  incorrect">Неверно</div><div class="gradingdetails">Баллов за ответ: 0/1.</div>    </div>  </div>
+</div>
+<div id="q1544405" class="que multichoice clearfix">
+  <div class="info">
+    <span class="no"><span class="accesshide">Question </span>17</span>
+          <div class="grade">
+        Баллов: 0/2      </div>
+      </div>
+  <div class="content">
+    <div class="qtext">
+  <p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">Есть
+текстовый файл, состоящий из цифр:</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">5</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">4</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">7</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">3</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">6</span></p><p style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">Какая
+последовательность команд выведет на
+экран цифру 2?</span></p></div>
+
+
+<div class="ablock clearfix">
+  <div class="prompt">
+    Выберите один ответ.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544427_5472911" name="resp1544427_"  type="radio" value="5472911" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544427_5472911">
+            tail -3 digs.txt | head -2 | wc -l                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544427_5472912" name="resp1544427_"  type="radio" value="5472912" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544427_5472912">
+            tail -3 digs.txt | wc -l | head -2                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input disabled="disabled" id="resp1544427_5472913" name="resp1544427_" checked="checked" type="radio" value="5472913" />        </td>
+        <td class="c1 text ">
+          <label for="resp1544427_5472913">
+            wc -l digs.txt | tail -2                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+      <div class="correctness  incorrect">Неверно</div><div class="gradingdetails">Баллов за ответ: 0/2.</div>    </div>      <div class="history">
+        История ответов:<table width="100%"  cellpadding="5" cellspacing="1" class="generaltable boxaligncenter" >
+<tr><th style="vertical-align:top;;white-space:nowrap;" class="header c0" scope="col">№</th><th style="vertical-align:top;;white-space:nowrap;" class="header c1" scope="col">Действие</th><th style="vertical-align:top;;white-space:nowrap;" class="header c2" scope="col">Ответ</th><th style="vertical-align:top;;white-space:nowrap;" class="header c3" scope="col">Время</th><th style="vertical-align:top;;white-space:nowrap;" class="header c4" scope="col">Набрано баллов</th><th style="vertical-align:top;;white-space:nowrap;" class="header c5 lastcol" scope="col">Оценка</th></tr>
+<tr class="r0 ">
+<td style="" class="cell c0"><a title="Обзор ответа" href="http://emcd.grsu.by/mod/quiz/reviewquestion.php?state=27666548&amp;number=17"  onclick="this.target='reviewquestion'; return openpopup('/mod/quiz/reviewquestion.php?state=27666548&amp;number=17', 'reviewquestion', 'menubar=0,location=0,scrollbars,resizable,width=650,height=450', 0);">1</a></td><td style="" class="cell c1">Оценить</td><td style="" class="cell c2">wc -l digs.txt | tail -2</td><td style="" class="cell c3"> 31/03/16 в 20:35:55</td><td style="" class="cell c4">0</td><td style="" class="cell c5 lastcol">0</td></tr>
+<tr class="r1  lastrow">
+<td style="" class="cell c0"><b>2</b></td><td style="" class="cell c1"><b>Закрыть и оценить</b></td><td style="" class="cell c2"><b>wc -l digs.txt | tail -2</b></td><td style="" class="cell c3"><b> 31/03/16 в 20:36:04</b></td><td style="" class="cell c4"><b>0</b></td><td style="" class="cell c5 lastcol"><b>0</b></td></tr>
+</table>
+      </div>
+      </div>
+</div>
+
+<div class="controls">
+<div class="singlebutton"><form action="view.php" method="get"><div><input type="hidden" name="id" value="971113" /><input type="submit" value="Закончить обзор"   /></div></form></div></div>
+</div><div id="footer"><div id="footer-bar"><span class="helplink"></span></div><div class="logininfo">Вы зашли под именем <a  href="http://emcd.grsu.by/user/view.php?id=16412&amp;course=112722">ГАЛУШКИН АЛЕКСЕЙ</a>  (<a  href="http://emcd.grsu.by/login/logout.php?sesskey=QEoVn4ICTn">Выход</a>)</div><div class="homelink"><a  href="http://emcd.grsu.by/course/view.php?id=112722">Администрирование информационных систем</a></div></div>	<div class="clear">&nbsp;</div>
+	<div class="footer">
+		<div class="padder">
+				<p>Copyright 2010-2016 &copy; by ГрГУ им.Янки Купалы.</p>
+			</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+		<div class="clear">&nbsp;</div>
+			<div class="altrwrap">
+			<img src="http://emcd.grsu.by/theme/premium-1/img/rr-cop.png" />
+		</div>
+		<div class="altlwrap">
+			<img src="http://emcd.grsu.by/theme/premium-1/img/ll-cop.png" />
+		</div>
+		<div class="altlrwrap">
+			<a href="#logo"><img src="http://emcd.grsu.by/theme/premium-1/img/backtotop.png" /></a>
+		</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

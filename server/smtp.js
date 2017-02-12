@@ -31,7 +31,7 @@
 //    });
 //});
 Meteor.startup(function () {
-    process.env.MAIL_URL = 'smtp://galushkin.aleksey:galushkin.aleksey1@smtp.gmail.com:587/'
+    process.env.MAIL_URL = 'smtp://galushkin.aleksey@gmail.com:galushkin.aleksey1@smtp.gmail.com:587/';
 });
 
 Meteor.methods({
