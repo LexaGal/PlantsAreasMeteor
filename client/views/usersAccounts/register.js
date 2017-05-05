@@ -17,19 +17,19 @@ Template.register.onRendered( function() {
     $( "#registerForm" ).validate({
         messages: {
             first_name: {
-                required: "Need first name here!"
+                required: "First name is required!"
             },
             last_name: {
-                required: "Need last name here!"
+                required: "Last name is required!"
             },
             email_address: {
-                required: "Need email address here!"
+                required: "Email address is required!"
             },
             password: {
-                required: "Need password here!"
+                required: "Password is required!"
             },
             confirm_password: {
-                required: "Confirm your password here!"
+                required: "Confirm your password!"
             }
         },
         highlight: function() {

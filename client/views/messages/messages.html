@@ -9,7 +9,7 @@
             <button id="closeMessages" class="btn btn-warning">Close all</button>
         </h3>
     </a>
-    <ul class="dropdown-menu" style="height: auto; overflow: auto">
+    <ul class="dropdown-menu messages-list">
         {{#if messagesCount}}
             {{#each messages}}
                 {{> messageItem}}

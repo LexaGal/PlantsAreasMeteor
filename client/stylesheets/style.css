@@ -1,7 +1,39 @@
+ul > li {
+    list-style: none;
+}
+
+.message {
+    padding-bottom: 0px;
+    right: auto;
+}
+
+.controls {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.validationError {
+    margin-left: 10px;
+}
+
+.form-control {
+    width: 270px;
+    margin: 10px 0;
+}
+
+.btn {
+    margin-right: 10px;
+    border: 2px solid #286090;
+}
+
 .badge {
-    font-size: 20px;
+    font-size: 10px;
     background-color: grey;
     color: white;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto !important;
 }
 
 .addButton {
@@ -46,26 +78,56 @@
     border-spacing: 10px;
 }
 
-.message {
-    margin-top: 15px;
-    padding: 15px;
-    /*border: solid dodgerblue 3px;*/
-    /*border-radius: 100%;*/
+ #errorResult, #successResult {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}   
+
+       /*{
+               width: 100%
+        margin-bottom: 10px;
+}*/
+
+
+.container{
+    padding-left: 0px;
 }
 
-.message:first-child{
+
+.message {
+    margin-top: 15px;
+    padding: 15px;    
+}
+
+.message:first-child {
     margin-right: 0px;
 }
 
 .bordered {
     width: 300px;
-    border: dodgerblue solid 3px;
-    /*border-radius: 15%;*/
+    border: dodgerblue solid 3px;    
 }
 
-.bordered input {
-    width: 294px;
+.messages-list {
+    height: 400px;
+    overflow: auto;
+ }
+
+#clearEmails {
+    float: left;
+    margin-right: 5px;
 }
+
+#sendEmails {
+    float: left;
+}
+
+#chosenEmails {
+    margin-bottom: 10px;
+    width: 100%;
+}    
 
 div.inline {
     float: right;
@@ -91,8 +153,7 @@ div.inline {
 .plantsarea {
     position: relative;
     transition: all 300ms 0ms ease-in;
-    background: white;
-    /*linear-gradient(to right, white, lightgreen);*/
+    background: white;    
     border: black 2px solid;
     border-radius: 8px;
     height: 160px;
@@ -128,7 +189,6 @@ body{
     margin-bottom: 10px;
 }
 
-/* line 32, ../sass/style.scss */
 .navbar .navbar-inner {
     -webkit-border-radius: 0px 0px 3px 3px;
     -moz-border-radius: 0px 0px 3px 3px;
@@ -216,7 +276,6 @@ body{
 .discuss {
     display: block;
     float: right;
-    /*margin-top: 7px;*/
     margin: 50px 10px 0px 10px;
     background-color: lawngreen;
     font-size: large;
@@ -339,4 +398,6 @@ body{
     clear: both;
     margin-bottom: 5px;
     pointer-events: auto;
+    right: 10px;
+    position: absolute;
 }
